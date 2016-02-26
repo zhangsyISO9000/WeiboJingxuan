@@ -12,6 +12,7 @@
 #import "QKNewCardViewController.h"
 #import "QKProfileViewController.h"
 #import "QKTabBar.h"
+#import "QKNavigationController.h"
 
 @interface QKMainViewController ()
 
@@ -53,7 +54,7 @@
     vc.tabBarItem.image = [UIImage imageNamed:imageName];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
-    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    QKNavigationController * nav = [[QKNavigationController alloc]initWithRootViewController:vc];
     
     [self addChildViewController:nav];
     
